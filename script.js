@@ -9,15 +9,15 @@ form.addEventListener("submit", function (e) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!emailRegex.test(email)) {
-    // Show error
-    errorMsg.style.display = "block";
+    // Show error styles and message
     emailInput.classList.add("error");
+    errorMsg.style.display = "block";
   } else {
-    // Hide error
-    errorMsg.style.display = "none";
+    // Clear error styles and message
     emailInput.classList.remove("error");
+    errorMsg.style.display = "none";
 
-    // Navigate to success page with email
+    // Navigate to success page with email in query
     window.location.href = `success.html?email=${encodeURIComponent(email)}`;
   }
 });
