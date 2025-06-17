@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success</title>
+    <link rel="stylesheet" href="success.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="success-card">
+      <img
+        src="./assets/icon-success.svg"
+        alt="Success Icon"
+        class="success-icon"
+      />
+      <h1 class="thanks-for-sub">Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to
+        <span class="success-text"></span>. Please open it and click the button
+        inside to confirm your subscription.
+      </p>
+      <button class="dismiss-btn">Dismiss message</button>
+    </div>
+
+    <script>
+      // Show email from URL param
+      const email = new URLSearchParams(window.location.search).get("email");
+      const emailElement = document.querySelector(".success-text");
+      if (email) {
+        emailElement.textContent = email;
+        emailElement.style.fontWeight = "bold";
+      }
+
+      // Redirect on dismiss
+      document.querySelector(".dismiss-btn").addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>

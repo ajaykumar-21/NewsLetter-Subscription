@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Signup</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sign-up-form">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <img src="./assets/icon-success.svg" alt="tick" /> Product discovery
+            and building what matters
+          </li>
+          <li>
+            <img src="./assets/icon-success.svg" alt="tick" /> Measuring to
+            ensure updates are a success
+          </li>
+          <li>
+            <img src="./assets/icon-success.svg" alt="tick" /> And much more!
+          </li>
+        </ul>
+
+        <form id="newsletter-form">
+          <label for="email">Email address</label>
+          <span class="error-message"><em>Valid email required.</em></span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@company.com"
+            required
+          />
+          <button type="submit" class="sub-btn">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+
+      <div class="image-container">
+        <img
+          src="./assets/illustration-sign-up-desktop.svg"
+          alt="Sign up illustration"
+        />
+      </div>
+    </div>
+
+    <footer class="footer">
+      Challenge by
+      <a href="https://crio.do" target="_blank" rel="noopener noreferrer"
+        >Crio</a
+      >. Coded by
+      <a
+        href="https://github.com/ajaykumar-21"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Ajay Kumar</a
+      >.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #2c2f4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.success-card {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.success-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.thanks-for-sub {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1e1f3a;
+}
+
+.success-card p {
+  color: #5f6073;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.success-text {
+  font-weight: bold;
+  color: #1e1f3a;
+}
+
+.dismiss-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background: linear-gradient(to right, #ff6257, #ff6a3a);
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 5px 15px rgba(255, 99, 71, 0.3);
+}
+
+.dismiss-btn:hover {
+  opacity: 0.9;
+}
