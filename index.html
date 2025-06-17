@@ -31,7 +31,6 @@
 
         <form id="newsletter-form">
           <label for="email">Email address</label>
-          <span class="error-message"><em>Valid email required.</em></span>
           <input
             type="email"
             id="email"
@@ -39,6 +38,9 @@
             placeholder="email@company.com"
             required
           />
+          <span class="error-message" style="display: none">
+            <em>Valid email required.</em>
+          </span>
           <button type="submit" class="sub-btn">
             Subscribe to monthly newsletter
           </button>

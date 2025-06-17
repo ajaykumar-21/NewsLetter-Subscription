@@ -64,11 +64,19 @@ label {
   font-weight: 500;
 }
 
-.error-message {
+/* Error visual styles for input */
+input.error {
+  border-color: rgb(255, 99, 71);
   color: rgb(255, 99, 71);
-  font-size: 0.7rem;
+  background-color: rgba(255, 99, 71, 0.6);
+}
+
+/* Hide by default */
+.error-message {
   display: none;
-  margin-bottom: 0.2rem;
+  color: rgb(255, 99, 71);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
 }
 
 input[type="email"] {
